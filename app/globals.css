@@ -51,7 +51,7 @@ html {
 /* Reusable helper classes */
 
 .container-global {
-    @apply w-full max-w-[1320px] mx-auto px-4 sm:px-16 md:px-10 lg:px-24 xl:px-10;
+    @apply w-full max-w-[1296px] mx-auto px-4 sm:px-24 md:px-20 lg:px-24 xl:px-10;
   }
 
 .flex-center {
@@ -234,6 +234,88 @@ html {
 
 .featured-services-description {
   @apply text-[14px] leading-[24px];
+}
+
+                        /* about section styles   */
+
+.about-section {
+  @apply py-[60px];
+}
+
+.about-header{
+  @apply  text-center max-w-3xl mx-auto opacity-0 animate-fadeInUp;
+}
+
+.about-title {
+  @apply text-3xl md:text-4xl font-bold text-gray-800;
+}
+
+.about-divider {
+  @apply relative flex items-center justify-center my-5;
+}
+
+.about-divider-line-left {
+  @apply w-full max-w-[60px] h-[1px] bg-gray-400;
+}
+
+.about-divider-line-center{
+  @apply w-16 h-[3px] bg-accent;
+}
+
+.about-divider-line-right{
+  @apply  w-full max-w-[60px] h-[1px] bg-gray-400;
+}
+
+.about-subtitle{
+  @apply text-default text-sm md:text-base;
+}
+
+.about-content-grid{
+  @apply  grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mt-12 opacity-0 animate-fadeInUpSoft [animation-delay:0.3s];
+}
+
+.about-image {
+  @apply object-cover;
+}
+
+.about-image-wrapper {
+  @apply relative w-full h-[342px] overflow-hidden;
+}
+
+.about-content{
+  @apply flex flex-col justify-center;
+}
+
+.about-heading {
+  @apply text-[1.75rem] font-bold text-gray-800 leading-tight;
+}
+
+.about-intro{
+  @apply italic my-4 text-default;
+}
+
+.about-list {
+  @apply list-none space-y-3;
+}
+
+.about-list-item {
+  @apply flex items-start;
+}
+
+.about-icon{
+  @apply text-accent text-xl mr-2 flex-shrink-0 mt-1;
+}
+
+.about-list{
+  @apply list-none mb-6;
+}
+
+.about-list-text{
+  @apply text-[16px];
+}
+
+.about-conclusion{
+  @apply  mt-4 text-default mb-0;
 }
 
 }

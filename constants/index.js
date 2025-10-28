@@ -38,3 +38,21 @@ export const featuredServices = [
   { id: 3, icon: "calendar", title: "Magni Dolores", text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia" },
   { id: 4, icon: "broadcast", title: "Nemo Enim", text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis" },
 ];
+
+// about section data
+export const aboutData = {
+  // Data for the section header
+  preTitle: "Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit",
+  
+  // Data for the main content grid
+  title: "Voluptatem dignissimos provident quasi corporis sit assumenda.",
+  introParagraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  
+  listItems: [
+    "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "Duis aute irure dolor in reprehenderit in voluptate velit.",
+    "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.",
+  ],
+
+  concludingParagraph: "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident",
+};
