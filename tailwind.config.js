@@ -11,7 +11,7 @@ module.exports = {
       sm: "600px",
       md: "750px",
       lg: "1000px",
-      xl: "1200px",   // ✅ changed breakpoint
+      xl: "1200px", // ✅ changed breakpoint
       "2xl": "1320px",
     },
 
@@ -19,11 +19,11 @@ module.exports = {
       center: true,
       padding: "1rem",
       screens: {
-      sm: "600px",
-      md: "750px",
-      lg: "1000px",
-      xl: "1200px",   // ✅ changed breakpoint
-      "2xl": "1320px",
+        sm: "600px",
+        md: "750px",
+        lg: "1000px",
+        xl: "1200px", // ✅ changed breakpoint
+        "2xl": "1320px",
       },
     },
 
@@ -60,8 +60,8 @@ module.exports = {
         bold: "700",
       },
 
-       // Added animations for Hero section
-        keyframes: {
+      // Added animations for Hero section
+      keyframes: {
         fadeInDown: {
           "0%": { opacity: 0, transform: "translateY(-50px)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
@@ -70,12 +70,16 @@ module.exports = {
           "0%": { opacity: 0, transform: "translateY(25px)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
+        fadeInUpSoft: {
+          "0%": { opacity: 0, transform: "translateY(80px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
       },
       animation: {
         fadeInDown: "fadeInDown 0.6s ease-out forwards",
         fadeInUp: "fadeInUp 0.6s ease-out forwards",
+        fadeInUpSoft: "fadeInUpSoft 0.5s ease-out forwards",
       },
-
     },
   },
 

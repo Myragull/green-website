@@ -51,7 +51,7 @@ html {
 /* Reusable helper classes */
 
 .container-global {
-    @apply w-full max-w-[1320px] mx-auto px-4 sm:px-8 md:px-14 lg:px-24 xl:px-10;
+    @apply w-full max-w-[1320px] mx-auto px-4 sm:px-16 md:px-10 lg:px-24 xl:px-10;
   }
 
 .flex-center {
@@ -106,14 +106,14 @@ html {
     @apply hover:text-gray-200;
   }
 
-  /* nav-bar */
+                                 /* nav-bar */
 
   .nav-bar{
-    @apply bg-white shadow-sm;
+    @apply bg-white shadow-sm h-[80px] flex items-center justify-center;
   }
 
   .nav-bar-content {
-    @apply container-global max-w-[1320px] mx-auto flex items-center justify-between h-[80px] ;
+    @apply container-global max-w-[1320px] mx-auto flex items-center justify-between py-[20px] ;
   }
 
   .logo {
@@ -148,10 +148,10 @@ html {
     @apply text-nav hover:text-nav-hover transition duration-300;
   }
 
-  /* --- Hero Styles --- */
+                           /* --- Hero Styles --- */
 
   .hero-container {
-    @apply relative w-full h-[600px] md:h-[800px] overflow-hidden;
+    @apply relative w-full h-[675px]  overflow-hidden;
   }
 
   .bg-image {
@@ -207,6 +207,34 @@ html {
     @apply  h-1 w-10  bg-white/60  transition-all duration-500;
   }
 
+                                /* Featured Services styles  */
+.featured-services-section {
+  @apply bg-[#f9fcf9] py-[30px];
+}
+
+.featured-services-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8;
+}
+
+.featured-services-wrapper {
+  @apply opacity-0 animate-fadeInUpSoft;
+}
+
+.featured-services-icon {
+  @apply mb-3 flex justify-items-end;
+}
+
+.featured-services-text {
+  @apply text-[20px] font-bold mb-[15px];
+}
+
+.featured-services-link {
+  @apply transition-colors text-black duration-300 hover:text-[var(--accent-color)];
+}
+
+.featured-services-description {
+  @apply text-[14px] leading-[24px];
+}
 
 }
 
