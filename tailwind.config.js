@@ -12,7 +12,7 @@ module.exports = {
       md: "750px",
       lg: "1000px",
       xl: "1200px", // ✅ changed breakpoint
-      "2xl": "1320px",
+      "2xl": "1400px",
     },
 
     container: {
@@ -23,7 +23,7 @@ module.exports = {
         md: "750px",
         lg: "1000px",
         xl: "1200px", // ✅ changed breakpoint
-        "2xl": "1320px",
+        "2xl": "1400px",
 
       },
     },

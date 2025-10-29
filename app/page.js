@@ -11,6 +11,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/1Header";
 import FeaturedServices from "@/components/3FeaturedServices";
 import WhyUsSection from "@/components/5WhyusSection";
+import Clients from "@/components/7Clients";
 
 export default function Home() {
   return (
@@ -30,6 +31,10 @@ export default function Home() {
 
       <section id="why-us">
         <WhyUsSection />
+      </section>
+
+      <section id="clients">
+        <Clients />
       </section>
 
       <section id="services">

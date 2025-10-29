@@ -343,6 +343,38 @@ html {
     @apply text-sm text-gray-400 font-light;
   }
 
+
+                          /* Clients Section Styles  */
+                        
+
+.clients-section {
+  @apply py-[60px] bg-[#f9fcf9] mb-6 w-screen; 
+}
+
+.clients-swiper-slide {
+  @apply flex-center h-auto; 
+}
+
+.clients-slide-image {
+  @apply grayscale opacity-50 transition-all duration-300;
+  @apply hover:grayscale-0 hover:opacity-100;
+  @apply object-contain w-auto h-12 max-w-[120px];
+  @apply h-16 sm:h-8 md:h-10 lg:h-6 xl:h-10 2xl:h-20;
+}
+
+.swiper-pagination-clients {
+  @apply mt-6  relative flex-center gap-[0px];
+}
+
+.swiper-pagination-clients .swiper-pagination-bullet {
+  @apply w-3 h-3 rounded-full opacity-100;
+  @apply bg-gray-300; 
+}
+
+.swiper-pagination-clients .swiper-pagination-bullet-active { 
+  @apply bg-accent;
+}
+
 }
 
 
