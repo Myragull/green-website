@@ -137,7 +137,7 @@ html {
   }
 
   .mobile-menu-panel {
-    @apply fixed top-[6%] left-[3%] right-[3%] bottom-[3%] bg-white rounded-md shadow-lg z-50 p-6 flex flex-col gap-6 transform transition-transform duration-300;
+    @apply fixed top-[6%] left-[3%] right-[3%] bottom-[3%] bg-white rounded-md shadow-lg z-50 p-6 flex flex-col  transform transition-transform duration-300;
   }
 
   .close-btn {
@@ -145,7 +145,7 @@ html {
   }
 
   .nav-links {
-    @apply text-nav hover:text-nav-hover transition duration-300;
+    @apply flex flex-col gap-4 text-nav text-xl  font-semibold hover:text-nav-hover transition duration-300  ;
   }
 
                            /* --- Hero Styles --- */
@@ -185,7 +185,7 @@ html {
     text-[var(--contrast-color)] bg-[var(--accent-color)]
     rounded-full px-8 py-2.5 transition-all duration-500
     mt-[10px] mb-[10px] mx-[10px]
-    hover:bg-white hover:text-[var(--accent-color)];
+    hover:bg-[#55ac6c] hover:text-[#ffffff];
     font-family: var(--heading-font)  opacity-0;
   
   }
@@ -317,6 +317,31 @@ html {
 .about-conclusion{
   @apply  mt-4 text-default mb-0;
 }
+
+                        /* Why Us Section Styles  */
+  .why-us-section {
+    @apply py-[60px];
+  }
+
+  .why-us-grid {
+@apply grid md:grid-cols-2 lg:grid-cols-3 border-r border-b border-gray-200;
+  }
+
+  .why-us-item {
+@apply p-10 border-l border-t border-gray-200;
+  }
+
+  .why-us-number {
+    @apply block text-accent text-2xl  mb-4;
+  }
+
+  .why-us-title {
+    @apply text-2xl font-semibold font-heading text-[#4c4c4c] mb-4;
+  }
+
+  .why-us-description {
+    @apply text-sm text-gray-400 font-light;
+  }
 
 }
 

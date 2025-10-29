@@ -24,6 +24,7 @@ module.exports = {
         lg: "1000px",
         xl: "1200px", // ✅ changed breakpoint
         "2xl": "1320px",
+
       },
     },
 
