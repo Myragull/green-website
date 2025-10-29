@@ -514,4 +514,188 @@ html {
   @apply whitespace-nowrap; 
 }
 
+
+                               /* Portfolio Section Styles */
+
+.portfolio-section {
+  @apply py-[60px];
+}
+
+/*  Section Header  */
+.portfolio-header {
+  @apply text-center max-w-3xl mx-auto opacity-0 animate-fadeInUp;
+}
+
+.portfolio-title {
+  @apply text-3xl md:text-4xl font-bold text-gray-800;
+}
+
+.portfolio-divider {
+  @apply relative flex items-center justify-center my-5;
+}
+
+.portfolio-divider-line-left {
+  @apply w-full max-w-[50px] h-[1px] bg-gray-400;
+}
+
+.portfolio-divider-line-center {
+  @apply w-16 h-[3px] bg-accent;
+}
+
+.portfolio-divider-line-right {
+  @apply w-full max-w-[50px] h-[1px] bg-gray-400;
+}
+
+.portfolio-subtitle {
+  @apply text-default text-sm md:text-base;
+}
+
+/*  Filter Buttons */
+.portfolio-filters {
+  @apply list-none text-center mb-4 mt-14 opacity-0 animate-fadeInUpSoft [animation-delay:0.2s];
+}
+
+.portfolio-filter-item {
+  @apply inline-block cursor-pointer font-medium text-base md:text-lg;
+  @apply mx-2 md:mx-2.5 transition-all duration-300 ease-in-out;
+  @apply text-gray-600 hover:text-accent;
+}
+
+.filter-active {
+  @apply text-accent;
+}
+
+.portfolio-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.portfolio-item {
+  @apply bg-surface h-full;
+  
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.07);
+  
+  @apply opacity-0 animate-fadeInUpSoft;
+}
+
+.portfolio-image-wrapper {
+  @apply overflow-hidden relative;
+}
+
+.portfolio-image {
+  @apply w-full h-auto;
+    @apply transition-transform duration-300 ease-in-out;
+  @apply group-hover:scale-110;
+}
+
+.portfolio-info {
+  @apply bg-background p-6 relative z-10;
+    @apply border-t border-gray-200;
+}
+
+.portfolio-info-title {
+  @apply text-lg font-semibold text-gray-800;
+  @apply transition-colors duration-300 hover:text-accent;
+}
+
+.portfolio-info-description {
+  @apply text-sm text-gray-500 mt-1;
+}
+
+
+/* ... (inside your @layer components { ... } block) */
+
+/* === Team Section Styles === */
+
+.team-section {
+  @apply py-[60px] bg-[#f9fcf9]; /* Light green/gray background */
+}
+
+/* --- Section Header (re-using styles) --- */
+.team-header {
+  @apply text-center max-w-3xl mx-auto opacity-0 animate-fadeInUp;
+}
+
+.team-title {
+  @apply text-3xl md:text-4xl font-bold text-gray-800;
+}
+
+.team-divider {
+  @apply relative flex items-center justify-center my-5;
+}
+
+.team-divider-line-left {
+  @apply w-full max-w-[60px] h-[1px] bg-gray-400;
+}
+
+.team-divider-line-center {
+  @apply w-16 h-[3px] bg-accent;
+}
+
+.team-divider-line-right {
+  @apply w-full max-w-[60px] h-[1px] bg-gray-400;
+}
+
+.team-subtitle {
+  @apply text-default text-sm md:text-base;
+}
+
+/* --- Team Grid --- */
+.team-grid {
+  /* Responsive grid layout */
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 ;
+}
+
+/* --- Team Card --- */
+.team-member {
+  @apply bg-surface text-center rounded-none;
+  
+  /* Slight border from Bootstrap: 1px solid faded default-color */
+  @apply border border-gray-100; 
+  
+  /* Animation */
+  @apply opacity-0 animate-fadeInUpSoft;
+
+  /* This ensures the image corners are contained if you add rounding */
+  @apply overflow-hidden;
+}
+
+.team-member-image {
+  /* Image is flush (no padding) */
+  @apply w-full h-auto;
+}
+
+/* --- Card Content --- */
+.team-member-content {
+  /* Padding for all text content */
+  @apply p-6;
+}
+
+.team-member-name {
+  @apply font-bold text-lg text-gray-800; /* h4, 18px */
+}
+
+.team-member-role {
+  /* span, 13px, italic, faded */
+  @apply block text-sm italic  text-[#bfbfbf];
+}
+
+.team-member-description {
+  /* p, 14px, italic, faded */
+  @apply pt-2.5 text-sm font-normal italic  text-[#bfbfbf];
+}
+
+/* --- Social Links --- */
+.team-member-socials {
+  @apply flex-center gap-[4px] mt-4;
+}
+
+.team-social-link {
+  /* Faded color, transitions to accent on hover */
+  @apply text-[#bfbfbf] hover:text-accent transition-colors duration-300;
+}
+
+.team-social-icon {
+  @apply text-xl; /* 18px */
+}
+
 }

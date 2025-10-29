@@ -156,3 +156,173 @@ export const ctaData = {
   buttonText: "Call To Action",
   buttonLink: "#", 
 };
+
+
+
+/* Data for the Portfolio section filters */
+export const portfolioFilters = ["All", "App", "Product", "Branding", "Books"];
+
+
+/* Data for the Portfolio grid items */
+export const portfolioItems = [
+  {
+    id: 1,
+    title: "App 1",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    image: "/portfolio/app-1.jpg",
+    category: "App",
+  },
+  {
+    id: 2,
+    title: "Product 1",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    image: "/portfolio/product-1.jpg",
+    category: "Product",
+  },
+  {
+    id: 3,
+    title: "Branding 1",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    image: "/portfolio/branding-1.jpg",
+    category: "Branding",
+  },
+  {
+    id: 4,
+    title: "Books 1",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    image: "/portfolio/books-1.jpg",
+    category: "Books",
+  },
+  {
+    id: 5,
+    title: "App 2",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    image: "/portfolio/app-2.jpg",
+    category: "App",
+  },
+  {
+    id: 6,
+    title: "Product 2",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    image: "/portfolio/product-2.jpg",
+    category: "Product",
+  },
+  {
+    id: 7,
+    title: "Branding 2",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    image: "/portfolio/branding-2.jpg",
+    category: "Branding",
+  },
+  {
+    id: 8,
+    title: "Books 2",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    image: "/portfolio/books-2.jpg",
+    category: "Books",
+  },
+  {
+    id: 9,
+    title: "App 3",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    image: "/portfolio/app-3.jpg",
+    category: "App",
+  },
+  {
+    id: 10,
+    title: "Product 3",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    image: "/portfolio/product-3.jpg",
+    category: "Product",
+  },
+  {
+    id: 11,
+    title: "Branding 3",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    image: "/portfolio/branding-3.jpg",
+    category: "Branding",
+  },
+  {
+    id: 12,
+    title: "Books 3",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    image: "/portfolio/books-3.jpg",
+    category: "Books",
+  },
+];
+
+
+/* Data for the Team section */
+export const teamData = [
+  {
+    id: 1,
+    imageSrc: "/team/team-1.jpg", 
+    name: "Walter White",
+    role: "Web Development",
+    description: "Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut",
+    socials: [
+      { name: "Twitter", href: "#", iconName: "FaTwitter" },
+      { name: "Facebook", href: "#", iconName: "FaFacebookF" },
+      { name: "Instagram", href: "#", iconName: "FaInstagram" },
+      { name: "LinkedIn", href: "#", iconName: "FaLinkedinIn" },
+    ],
+  },
+  {
+    id: 2,
+    imageSrc: "/team/team-2.jpg",
+    name: "Sarah Jhinson",
+    role: "Marketing",
+    description: "Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus",
+    socials: [
+      { name: "Twitter", href: "#", iconName: "FaTwitter" },
+      { name: "Facebook", href: "#", iconName: "FaFacebookF" },
+      { name: "Instagram", href: "#", iconName: "FaInstagram" },
+      { name: "LinkedIn", href: "#", iconName: "FaLinkedinIn" },
+    ],
+  },
+  {
+    id: 3,
+    imageSrc: "/team/team-3.jpg", 
+    name: "William Anderson",
+    role: "Content",
+    description: "Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara",
+    socials: [
+      { name: "Twitter", href: "#", iconName: "FaTwitter" },
+      { name: "Facebook", href: "#", iconName: "FaFacebookF" },
+      { name: "Instagram", href: "#", iconName: "FaInstagram" },
+      { name: "LinkedIn", href: "#", iconName: "FaLinkedinIn" },
+    ],
+  },
+];
+
+
+/*  Data for the Contact section info blocks */
+export const contactInfoItems = [
+  {
+    id: 1,
+    iconName: "BiMap", 
+    title: "Address",
+    text: "A108 Adam Street, New York, NY 535022",
+  },
+  {
+    id: 2,
+    iconName: "BiEnvelope",
+    title: "Email Us",
+    text: "info@example.com",
+  },
+  {
+    id: 3,
+    iconName: "BiPhoneCall", 
+    title: "Call Us",
+    text: "+1 5589 55488 55",
+  },
+];
+
+/* Data for the Contact section form placeholders */
+export const contactFormData = {
+  namePlaceholder: "Your Name",
+  emailPlaceholder: "Your Email",
+  subjectPlaceholder: "Subject",
+  messagePlaceholder: "Message",
+  buttonText: "Send Message",
+};
