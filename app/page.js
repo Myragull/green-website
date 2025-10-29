@@ -12,7 +12,7 @@ import Header from "@/components/1Header";
 import FeaturedServices from "@/components/3FeaturedServices";
 import WhyUsSection from "@/components/5WhyusSection";
 import Clients from "@/components/6Clients";
-
+import CallToUs from "@/components/8CallToAct";
 export default function Home() {
   return (
     <main className="scroll-smooth ">
@@ -39,6 +39,10 @@ export default function Home() {
 
       <section id="services">
         <Services />
+      </section>
+
+      <section id="call-to-us">
+        <CallToUs />
       </section>
 
       <section id="portfolio">

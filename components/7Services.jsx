@@ -1,14 +1,7 @@
 "use client";
 
 import { servicesData } from "@/constants";
-import {
-  BiNetworkChart,
-  BiRss,
-  BiArch,
-  BiRectangle,
-  BiWindow,
-  BiChat,
-} from "react-icons/bi";
+import {BiNetworkChart,BiRss, BiArch, BiRectangle, BiWindow,BiChat,} from "react-icons/bi";
 
 const iconMap = {
   BiNetworkChart: BiNetworkChart,

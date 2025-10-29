@@ -475,4 +475,43 @@ html {
 .item-pink .service-icon-wrapper { @apply bg-pink-100; }
 .item-pink .service-icon { @apply text-pink-500; }
 
+
+
+           /* Call To Action Section Styles */
+.cta-section {
+  @apply py-[120px] w-screen bg-[--accent-color];
+}
+
+.cta-flex {
+  @apply flex flex-col items-center justify-center text-center gap-4;
+
+  @apply xl:flex-row xl:items-center xl:justify-between xl:text-left xl:gap-16;
+}
+
+.cta-content {
+  @apply opacity-0 animate-fadeInUpSoft;
+}
+
+.cta-title {
+  @apply text-4xl font-bold text-heading;
+}
+
+.cta-description {
+  @apply mt-4 text-contrast placeholder-opacity-100;
+}
+
+.cta-btn-container {
+  @apply flex-center xl:justify-end;
+  @apply opacity-0 animate-fadeInUpSoft [animation-delay:0.2s];
+}
+
+.cta-btn {
+  @apply font-heading font-medium text-base tracking-wider;
+  @apply inline-block py-3 px-10 rounded-full m-2.5;
+  @apply border-2 border-contrast text-contrast;
+  @apply transition-all duration-500;
+  @apply hover:bg-accent hover:border-accent;
+  @apply whitespace-nowrap; 
+}
+
 }
