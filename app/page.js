@@ -5,13 +5,13 @@ import Portfolio from "@/components/Portfolio";
 import Dropdown from "@/components/Dropdown";
 import Hero from "@/components/2Hero";
 import Team from "@/components/Team";
-import Services from "@/components/6Services";
+import Services from "@/components/7Services";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/1Header";
 import FeaturedServices from "@/components/3FeaturedServices";
 import WhyUsSection from "@/components/5WhyusSection";
-import Clients from "@/components/7Clients";
+import Clients from "@/components/6Clients";
 
 export default function Home() {
   return (

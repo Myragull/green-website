@@ -344,11 +344,12 @@ html {
   }
 
 
+
                           /* Clients Section Styles  */
                         
 
 .clients-section {
-  @apply py-[60px] bg-[#f9fcf9] mb-6 w-screen; 
+  @apply py-[60px] bg-[#f9fcf9]  w-screen; 
 }
 
 .clients-swiper-slide {
@@ -375,7 +376,103 @@ html {
   @apply bg-accent;
 }
 
+
+
+                          /* Services Section Styles */
+
+.services-section {
+  @apply py-[60px];
+}
+
+.services-header {
+  @apply text-center max-w-3xl mx-auto opacity-0 animate-fadeInUp;
+}
+
+.services-title {
+  @apply text-3xl md:text-4xl font-bold text-gray-800;
+}
+
+.services-divider {
+  @apply relative flex items-center justify-center my-5;
+}
+
+.services-divider-line-left {
+  @apply w-full max-w-[60px] h-[1px] bg-gray-400;
+}
+
+.services-divider-line-center {
+  @apply w-16 h-[3px] bg-accent;
+}
+
+.services-divider-line-right {
+  @apply w-full max-w-[60px] h-[1px] bg-gray-400;
+}
+
+.services-subtitle {
+  @apply text-default text-sm md:text-base;
+}
+
+/* --- Services Grid --- */
+.services-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12;
+}
+
+.service-item {
+  @apply bg-surface h-full py-10 px-8 text-center rounded-md;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+  @apply opacity-0 animate-fadeInUpSoft;
+  @apply transition-transform duration-300 ease-out;
+  @apply hover:scale-105 hover:-translate-y-1;
+}
+
+/* --- Icon Wrapper (the colored circle) --- */
+.service-icon-wrapper {
+  @apply relative w-16 h-16 rounded-full mb-6;
+  @apply inline-flex items-center justify-center;
+}
+
+/* --- Icon itself --- */
+.service-icon {
+  @apply text-3xl;
+}
+
+/* --- Card Text --- */
+.service-title a {
+  @apply font-bold text-xl mb-4 block;
+  @apply text-gray-700 transition-colors duration-300 group-hover:text-black;
+}
+
+.service-description {
+  /* Font and color */
+  @apply mb-0 text-gray-500;
+  @apply transition-colors duration-300 group-hover:text-gray-700;
 }
 
 
+/* --- Icon Color Variants (from Bootstrap) --- */
 
+/* Cyan */
+.item-cyan .service-icon-wrapper { @apply bg-cyan-100; }
+.item-cyan .service-icon { @apply text-cyan-500; }
+
+/* Orange */
+.item-orange .service-icon-wrapper { @apply bg-orange-100; }
+.item-orange .service-icon { @apply text-orange-500; }
+
+/* Teal */
+.item-teal .service-icon-wrapper { @apply bg-teal-100; }
+.item-teal .service-icon { @apply text-teal-500; }
+
+/* Red */
+.item-red .service-icon-wrapper { @apply bg-red-100; }
+.item-red .service-icon { @apply text-red-500; }
+
+/* Indigo */
+.item-indigo .service-icon-wrapper { @apply bg-indigo-100; }
+.item-indigo .service-icon { @apply text-indigo-500; }
+
+/* Pink */
+.item-pink .service-icon-wrapper { @apply bg-pink-100; }
+.item-pink .service-icon { @apply text-pink-500; }
+
+}

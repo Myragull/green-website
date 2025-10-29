@@ -72,8 +72,8 @@ module.exports = {
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
         fadeInUpSoft: {
-          "0%": { opacity: 0, transform: "translateY(80px)" },
-          "100%": { opacity: 1, transform: "translateY(0)" },
+    "0%": { opacity: 0, translate: "0 80px" }, 
+        "100%": { opacity: 1, translate: "0 0" },    
         },
         pulseRing: {
           '0%': {

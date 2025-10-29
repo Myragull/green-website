@@ -102,3 +102,49 @@ export const clientLogos = [
   "client-7.png",
   "client-8.png",
 ];
+
+/* Data for the Services section */
+export const servicesData = [
+  {
+    id: 1,
+    iconName: "BiNetworkChart", 
+    title: "Nesciunt Mete",
+    description: "Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.",
+    colorClass: "item-cyan",
+  },
+  {
+    id: 2,
+    iconName: "BiRss", 
+    title: "Eosle Commodi",
+    description: "Ut autem aut autem non a. Sint sit facilis nam usto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.",
+    colorClass: "item-orange",
+  },
+  {
+    id: 3,
+    iconName: "BiArch", 
+    title: "Ledo Markt",
+    description: "Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.",
+    colorClass: "item-teal",
+  },
+  {
+    id: 4,
+    iconName: "BiRectangle",
+    title: "Asperiores Commodi",
+    description: "Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.",
+    colorClass: "item-red",
+  },
+  {
+    id: 5,
+    iconName: "BiWindow", 
+    title: "Velit Doloremque",
+    description: "Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.",
+    colorClass: "item-indigo",
+  },
+  {
+    id: 6,
+    iconName: "BiChat",
+    title: "Dolori Architecto",
+    description: "Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.",
+    colorClass: "item-pink",
+  },
+];
