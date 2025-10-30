@@ -602,15 +602,12 @@ html {
 }
 
 
-/* ... (inside your @layer components { ... } block) */
-
-/* === Team Section Styles === */
+                                       /* Team Section Styles */
 
 .team-section {
-  @apply py-[60px] bg-[#f9fcf9]; /* Light green/gray background */
+  @apply py-[60px] bg-[#f9fcf9]; 
 }
 
-/* --- Section Header (re-using styles) --- */
 .team-header {
   @apply text-center max-w-3xl mx-auto opacity-0 animate-fadeInUp;
 }
@@ -639,63 +636,129 @@ html {
   @apply text-default text-sm md:text-base;
 }
 
-/* --- Team Grid --- */
 .team-grid {
-  /* Responsive grid layout */
   @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 ;
 }
 
-/* --- Team Card --- */
 .team-member {
   @apply bg-surface text-center rounded-none;
-  
-  /* Slight border from Bootstrap: 1px solid faded default-color */
   @apply border border-gray-100; 
-  
-  /* Animation */
   @apply opacity-0 animate-fadeInUpSoft;
-
-  /* This ensures the image corners are contained if you add rounding */
   @apply overflow-hidden;
 }
 
 .team-member-image {
-  /* Image is flush (no padding) */
   @apply w-full h-auto;
 }
 
-/* --- Card Content --- */
 .team-member-content {
-  /* Padding for all text content */
   @apply p-6;
 }
 
 .team-member-name {
-  @apply font-bold text-lg text-gray-800; /* h4, 18px */
+  @apply font-bold text-lg text-gray-800; 
 }
 
 .team-member-role {
-  /* span, 13px, italic, faded */
   @apply block text-sm italic  text-[#bfbfbf];
 }
 
 .team-member-description {
-  /* p, 14px, italic, faded */
   @apply pt-2.5 text-sm font-normal italic  text-[#bfbfbf];
 }
 
-/* --- Social Links --- */
 .team-member-socials {
   @apply flex-center gap-[4px] mt-4;
 }
 
 .team-social-link {
-  /* Faded color, transitions to accent on hover */
   @apply text-[#bfbfbf] hover:text-accent transition-colors duration-300;
 }
 
 .team-social-icon {
-  @apply text-xl; /* 18px */
+  @apply text-xl; 
 }
+
+
+                                        /* Contact Section Style */
+
+.contact-section {
+  @apply py-[60px] ;
+}
+
+.contact-header {
+  @apply text-center max-w-3xl mx-auto opacity-0 animate-fadeInUp mb-12;
+}
+.contact-title { @apply text-3xl md:text-4xl font-bold text-gray-800; }
+.contact-divider { @apply relative flex items-center justify-center my-5; }
+.contact-divider-line-left { @apply w-full max-w-[60px] h-[1px] bg-gray-400; }
+.contact-divider-line-center { @apply w-16 h-[3px] bg-accent; }
+.contact-divider-line-right { @apply w-full max-w-[60px] h-[1px] bg-gray-400; }
+.contact-subtitle { @apply text-default text-sm md:text-base; }
+
+.contact-grid {
+  @apply grid grid-cols-1 lg:grid-cols-12 gap-8;
+}
+
+.contact-info-wrap {
+  @apply bg-surface shadow-lg p-6 md:p-8 h-full;
+    @apply lg:col-span-5;
+  @apply opacity-0 animate-fadeInUpSoft;
+}
+
+.contact-info-item {
+  @apply flex items-start mb-8 opacity-0 animate-fadeInUpSoft; 
+}
+
+.contact-info-icon {
+  @apply flex items-center justify-center mr-4 flex-shrink-0;
+}
+
+.icon-bg {
+  @apply flex items-center bg-[#f2f9f4] justify-center w-11 h-11 rounded-full  text-accent 
+         transition-all duration-500 ease-in-out;
+  @apply group-hover:bg-accent group-hover:text-contrast;
+    font-size: 1.5rem; 
+}
+
+.contact-info-title {
+  @apply text-lg font-bold text-gray-800 mb-1;
+}
+
+.contact-info-text {
+  @apply text-sm text-gray-600;
+}
+
+.contact-map {
+  @apply mt-8; 
+  @apply opacity-0 animate-fadeInUpSoft [animation-delay:0.4s];
+}
+
+.contact-form {
+  @apply bg-surface shadow-lg p-6 md:p-8 h-full;
+  @apply lg:col-span-7;
+  @apply opacity-0 animate-fadeInUpSoft [animation-delay:0.2s];
+}
+
+.contact-label {
+  @apply block text-base font-light text-gray-800 mb-2;
+}
+
+.contact-input,
+.contact-textarea {
+  @apply w-full text-sm py-2.5 px-4 rounded-none border;
+  @apply text-default bg-surface border-gray-300; 
+    @apply shadow-none outline-none appearance-none;
+    @apply transition-colors duration-300;
+  @apply placeholder:text-gray-400;
+  @apply focus:border-accent;
+}
+
+.contact-textarea {
+  @apply resize-none; 
+
+.contact-submit-btn {
+  @apply bg-accent text-contrast py-2.5 px-8 rounded-full border-0;
+    @apply transition-colors duration-300;
 
 }

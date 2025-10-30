@@ -2,11 +2,10 @@
 
 import About from "@/components/4About";
 import Portfolio from "@/components/9Portfolio";
-import Dropdown from "@/components/Dropdown";
 import Hero from "@/components/2Hero";
 import Team from "@/components/10Team";
 import Services from "@/components/7Services";
-import Contact from "@/components/Contact";
+import Contact from "@/components/11Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/1Header";
 import FeaturedServices from "@/components/3FeaturedServices";
@@ -53,10 +52,6 @@ export default function Home() {
 
        <section id="team">
         <Team />
-      </section>
-
-       <section id="dropdown">
-        <Dropdown />
       </section>
 
       <section id="contact">
