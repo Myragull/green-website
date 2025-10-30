@@ -685,7 +685,7 @@ html {
   }
 
   .team-member-role {
-    @apply block text-sm italic  text-[#bfbfbf];
+    @apply block text-sm italic  text-[#a2a2a2];
   }
 
   .team-member-description {
