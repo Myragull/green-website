@@ -13,20 +13,20 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio-section container-global">
-      
       {/* 1. Section Header */}
       <div className="portfolio-header">
         <h2 className="portfolio-title">Portfolio</h2>
-        
+
         {/* Divider */}
         <div className="portfolio-divider">
           <div className="portfolio-divider-line-left"></div>
           <div className="portfolio-divider-line-center"></div>
           <div className="portfolio-divider-line-right"></div>
         </div>
-        
+
         <p className="portfolio-subtitle">
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
         </p>
       </div>
 
@@ -63,7 +63,7 @@ const Portfolio = () => {
                 className="portfolio-image"
               />
             </div>
-            
+
             {/* Info box below the image */}
             <div className="portfolio-info">
               <h4>

@@ -1,7 +1,14 @@
 "use client";
 
 import { servicesData } from "@/constants";
-import {BiNetworkChart,BiRss, BiArch, BiRectangle, BiWindow,BiChat,} from "react-icons/bi";
+import {
+  BiNetworkChart,
+  BiRss,
+  BiArch,
+  BiRectangle,
+  BiWindow,
+  BiChat,
+} from "react-icons/bi";
 
 const iconMap = {
   BiNetworkChart: BiNetworkChart,
@@ -35,25 +42,23 @@ const Services = () => {
           const IconComponent = iconMap[service.iconName];
 
           return (
-        
             <div
-           key={service.id}
-            className={`service-item ${service.colorClass} group animate-fadeInUpSoft`}
-            style={{ animationDelay: `${index * 0.1}s` }}
-          >
-            <div className="service-icon-wrapper">
-              {IconComponent ? (
-                <IconComponent className="service-icon" />
-              ) : null}
+              key={service.id}
+              className={`service-item ${service.colorClass} group animate-fadeInUpSoft`}
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="service-icon-wrapper">
+                {IconComponent ? (
+                  <IconComponent className="service-icon" />
+                ) : null}
+              </div>
+
+              <h3 className="service-title">
+                <a>{service.title}</a>
+              </h3>
+
+              <p className="service-description">{service.description}</p>
             </div>
-
-            <h3 className="service-title">
-              <a>{service.title}</a>
-            </h3>
-
-            <p className="service-description">{service.description}</p>
-            
-          </div>
           );
         })}
       </div>

@@ -8,7 +8,6 @@ const CallToAction = () => {
     <div className="cta-section">
       <div className="container-global">
         <div className="cta-flex">
-
           {/* --- Left Column (Text) --- */}
           <div className="cta-content">
             <h3 className="cta-title">{ctaData.title}</h3>
@@ -21,7 +20,6 @@ const CallToAction = () => {
               {ctaData.buttonText}
             </Link>
           </div>
-
         </div>
       </div>
     </div>

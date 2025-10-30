@@ -3,7 +3,6 @@ import { MdArrowBackIosNew } from "react-icons/md";
 import React, { useState, useEffect } from "react";
 import { heroSlides } from "@/constants";
 
-
 function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slideInterval = 5000; // Time per slide in ms (3 seconds)
@@ -12,16 +11,12 @@ function Hero() {
 
   // Go to next slide
   const nextSlide = () => {
-    setCurrentSlide((prev) =>
-      prev === heroSlides.length - 1 ? 0 : prev + 1
-    );
+    setCurrentSlide((prev) => (prev === heroSlides.length - 1 ? 0 : prev + 1));
   };
 
   // Go to previous slide
   const prevSlide = () => {
-    setCurrentSlide((prev) =>
-      prev === 0 ? heroSlides.length - 1 : prev - 1
-    );
+    setCurrentSlide((prev) => (prev === 0 ? heroSlides.length - 1 : prev - 1));
   };
 
   // Go to specific slide
@@ -37,9 +32,7 @@ function Hero() {
 
     // Clear interval on component unmount
     return () => clearInterval(timer);
-  }, [currentSlide]); 
-
-
+  }, [currentSlide]);
 
   return (
     <div className=" hero-container">
@@ -63,34 +56,33 @@ function Hero() {
 
           {/* Content */}
           <div className="content relative">
-           
-        <div className="content-wrapper "> 
-            <h2
-              className={`title ${
-                index === currentSlide ? "animate-fadeInDown" : "opacity-0"
-              }`}
-            >
-              {slide.heading}
-            </h2>
-            <p
-              className={`paragragh ${
-                index === currentSlide
-                  ? "animate-fadeInDown [animation-delay:0.3s]"
-                  : "opacity-0"
-              }`}
-            >
-              {slide.text}
-            </p>
-            <a
-              href="#about"
-              className={`btn-get-started ${
-                index === currentSlide
-                  ? "animate-fadeInUp [animation-delay:0.6s]"
-                  : "opacity-0"
-              }`}
-            >
-              Get Started
-            </a>
+            <div className="content-wrapper ">
+              <h2
+                className={`title ${
+                  index === currentSlide ? "animate-fadeInDown" : "opacity-0"
+                }`}
+              >
+                {slide.heading}
+              </h2>
+              <p
+                className={`paragragh ${
+                  index === currentSlide
+                    ? "animate-fadeInDown [animation-delay:0.3s]"
+                    : "opacity-0"
+                }`}
+              >
+                {slide.text}
+              </p>
+              <a
+                href="#about"
+                className={`btn-get-started ${
+                  index === currentSlide
+                    ? "animate-fadeInUp [animation-delay:0.6s]"
+                    : "opacity-0"
+                }`}
+              >
+                Get Started
+              </a>
             </div>
           </div>
         </div>
@@ -104,7 +96,7 @@ function Hero() {
         className="left-arrow "
         aria-label="Previous slide"
       >
-        < MdArrowBackIosNew />
+        <MdArrowBackIosNew />
       </button>
 
       {/* Right Arrow */}
@@ -113,7 +105,7 @@ function Hero() {
         className="right-arrow "
         aria-label="Next slide"
       >
-        < MdArrowForwardIos />
+        <MdArrowForwardIos />
       </button>
 
       {/* Bottom Indicators */}
@@ -129,12 +121,8 @@ function Hero() {
           ></button>
         ))}
       </div>
-      
     </div>
   );
 }
 
 export default Hero;
-
-
-  

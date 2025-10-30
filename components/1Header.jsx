@@ -5,9 +5,8 @@ import { PiEnvelopeLight } from "react-icons/pi";
 import { CgSmartphone } from "react-icons/cg";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { RxHamburgerMenu, RxCross2 } from "react-icons/rx"; 
-import { navItems } from "@/constants"; 
-
+import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
+import { navItems } from "@/constants";
 
 function Header() {
   const [activeSection, setActiveSection] = useState("home");
@@ -28,14 +27,12 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
   //  Lock body scroll when menu open
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "auto";
   }, [menuOpen]);
 
-
-   //  Auto-close mobile menu when screen >= 1200px
+  //  Auto-close mobile menu when screen >= 1200px
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1200) {
@@ -45,7 +42,6 @@ function Header() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
 
   return (
     <header className="header  ">
@@ -63,14 +59,21 @@ function Header() {
             </div>
           </div>
           <div className="social-links">
-            <a href="#" className="social-hover"><FaXTwitter /></a>
-            <a href="#" className="social-hover"><FaFacebook /></a>
-            <a href="#" className="social-hover"><FaInstagram /></a>
-            <a href="#" className="social-hover"><FaLinkedin /></a>
+            <a href="#" className="social-hover">
+              <FaXTwitter />
+            </a>
+            <a href="#" className="social-hover">
+              <FaFacebook />
+            </a>
+            <a href="#" className="social-hover">
+              <FaInstagram />
+            </a>
+            <a href="#" className="social-hover">
+              <FaLinkedin />
+            </a>
           </div>
         </div>
       </div>
-
 
       {/* Navbar */}
       <div className="nav-bar">
@@ -80,12 +83,12 @@ function Header() {
 
           {/* Hamburger button */}
           {!menuOpen && (
-          <button
-            className=" hamburger-btn "
-            onClick={() => setMenuOpen(true)}
-          >
-            <RxHamburgerMenu />
-          </button>
+            <button
+              className=" hamburger-btn "
+              onClick={() => setMenuOpen(true)}
+            >
+              <RxHamburgerMenu />
+            </button>
           )}
 
           {/* Desktop Menu */}
@@ -111,21 +114,16 @@ function Header() {
       </div>
 
       {/* ✅ Mobile Menu Overlay */}
-      {menuOpen && (
-        <div className="mobile-menu-overlay"></div>
-      )}
+      {menuOpen && <div className="mobile-menu-overlay"></div>}
 
       {/* ✅ Mobile Menu Panel */}
       <div
-       className={`mobile-menu-panel ${
-    menuOpen ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
-  }`}
+        className={`mobile-menu-panel ${
+          menuOpen ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+        }`}
       >
         {/* Close button */}
-        <button
-          className="close-btn"
-          onClick={() => setMenuOpen(false)}
-        >
+        <button className="close-btn" onClick={() => setMenuOpen(false)}>
           <RxCross2 />
         </button>
 
@@ -153,4 +151,3 @@ function Header() {
 }
 
 export default Header;
-

@@ -11,7 +11,7 @@ module.exports = {
       sm: "600px",
       md: "750px",
       lg: "1000px",
-      xl: "1200px", // ✅ changed breakpoint
+      xl: "1200px",
       "2xl": "1400px",
     },
 
@@ -22,9 +22,8 @@ module.exports = {
         sm: "600px",
         md: "750px",
         lg: "1000px",
-        xl: "1200px", // ✅ changed breakpoint
+        xl: "1200px", 
         "2xl": "1400px",
-
       },
     },
 
@@ -61,7 +60,6 @@ module.exports = {
         bold: "700",
       },
 
-      // Added animations for Hero section
       keyframes: {
         fadeInDown: {
           "0%": { opacity: 0, transform: "translateY(-50px)" },
@@ -72,21 +70,21 @@ module.exports = {
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
         fadeInUpSoft: {
-    "0%": { opacity: 0, translate: "0 80px" }, 
-        "100%": { opacity: 1, translate: "0 0" },    
+          "0%": { opacity: 0, translate: "0 80px" },
+          "100%": { opacity: 1, translate: "0 0" },
         },
         pulseRing: {
-          '0%': {
-            transform: 'scale(0.8)',
-            opacity: '1',
+          "0%": {
+            transform: "scale(0.8)",
+            opacity: "1",
           },
-          '70%': {
-            transform: 'scale(1.5)',
-            opacity: '0',
+          "70%": {
+            transform: "scale(1.5)",
+            opacity: "0",
           },
-          '100%': {
-            transform: 'scale(0.8)',
-            opacity: '0',
+          "100%": {
+            transform: "scale(0.8)",
+            opacity: "0",
           },
         },
       },
@@ -94,7 +92,7 @@ module.exports = {
         fadeInDown: "fadeInDown 0.6s ease-out forwards",
         fadeInUp: "fadeInUp 0.6s ease-out forwards",
         fadeInUpSoft: "fadeInUpSoft 0.5s ease-out forwards",
-        pulseRing: 'pulseRing 2s ease-out infinite',
+        pulseRing: "pulseRing 2s ease-out infinite",
       },
     },
   },

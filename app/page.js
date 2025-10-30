@@ -6,7 +6,7 @@ import Hero from "@/components/2Hero";
 import Team from "@/components/10Team";
 import Services from "@/components/7Services";
 import Contact from "@/components/11Contact";
-import Footer from "@/components/Footer";
+import Footer from "@/components/12Footer";
 import Header from "@/components/1Header";
 import FeaturedServices from "@/components/3FeaturedServices";
 import WhyUsSection from "@/components/5WhyusSection";

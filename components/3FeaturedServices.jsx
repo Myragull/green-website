@@ -6,9 +6,15 @@ import { BsBroadcast } from "react-icons/bs";
 import { featuredServices } from "@/constants";
 
 const iconMap = {
-  heartbeat: <TbActivityHeartbeat className="text-[36px] text-[var(--accent-color)]" />,
-  vector: <LiaVectorSquareSolid className="text-[36px] text-[var(--accent-color)]" />,
-  calendar: <IoCalendarOutline className="text-[36px] text-[var(--accent-color)]" />,
+  heartbeat: (
+    <TbActivityHeartbeat className="text-[36px] text-[var(--accent-color)]" />
+  ),
+  vector: (
+    <LiaVectorSquareSolid className="text-[36px] text-[var(--accent-color)]" />
+  ),
+  calendar: (
+    <IoCalendarOutline className="text-[36px] text-[var(--accent-color)]" />
+  ),
   broadcast: <BsBroadcast className="text-[36px] text-[var(--accent-color)]" />,
 };
 
@@ -28,18 +34,13 @@ function FeaturedServices() {
                 animationFillMode: "forwards",
               }}
             >
-              {/* featured-service-card */ }
-              <div
-                className="featured-service-card p-[50px_30px] text-left transition-all duration-400 hover:-translate-y-[13px]"
-              >
+              {/* featured-service-card */}
+              <div className="featured-service-card p-[50px_30px] text-left transition-all duration-400 hover:-translate-y-[13px]">
                 <div className="featured-services-icon">
                   {iconMap[service.icon]}
                 </div>
                 <h4 className="featured-services-text">
-                  <a
-                    href="#"
-                    className="featured-services-link"
-                  >
+                  <a href="#" className="featured-services-link">
                     {service.title}
                   </a>
                 </h4>
@@ -48,7 +49,6 @@ function FeaturedServices() {
             </div>
           ))}
         </div>
-        
       </div>
     </section>
   );
